@@ -8,7 +8,7 @@ const StyledCurrentDayContainer = styled.div`
         height: 100px;
         width: 100%;
     }
-`
+`;
 
 const CurrentDayContainer = () => {
     return (

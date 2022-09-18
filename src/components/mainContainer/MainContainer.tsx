@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import DayDetail, { DayDetailProps } from '../dayDetail/DayDetail';
 
 const StyledMainContainer = styled.div`
     background-color: #100E1D;
@@ -9,8 +10,11 @@ const StyledMainContainer = styled.div`
 `
 
 const MainContainer = () => {
+    const dayDetailProps: DayDetailProps = { weatherKey: 'cloudyWithSun', day: 'Sun, 7 Jun', minTemperature: '11°C', maxTemperature: '16°C' };
     return (
-        <StyledMainContainer />
+        <StyledMainContainer>
+            <DayDetail {...dayDetailProps} />
+        </StyledMainContainer>
     );
 };
 
